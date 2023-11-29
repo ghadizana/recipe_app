@@ -58,7 +58,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/tv_author"
+                        android:id="@+id/tv_title_category"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_title_recipe"
@@ -68,17 +68,7 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tv_title_desc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/deskripsi_makanan"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_desc"
+                    android:id="@+id/tv_title_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />
@@ -93,7 +83,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tv_ingredients"
+                    android:id="@+id/tv_title_ingredients"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />
@@ -108,7 +98,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tv_steps"
+                    android:id="@+id/tv_title_steps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />

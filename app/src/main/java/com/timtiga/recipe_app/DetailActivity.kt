@@ -32,7 +32,9 @@ class DetailActivity : AppCompatActivity() {
 
         binding.apply {
             tvTitleRecipe.text = recipeData?.strMeal
-            tvDesc.text = recipeData?.strArea
+            tvTitleCategory.text = recipeData?.strCategory
+            tvTitleArea.text = recipeData?.strArea
+            tvTitleSteps.text = recipeData?.strInstructions
             Picasso.get().load(recipeData?.strMealThumb).into(ivFood)
         }
     }
