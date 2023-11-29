@@ -39,7 +39,6 @@ data class Ingredient (
     val strIngredient7: String,
     val strIngredient8: String,
     val strIngredient9: String,
-    val strIngredient10: String,
 ): Parcelable
 
 @JsonClass(generateAdapter = true)
@@ -54,15 +53,4 @@ data class Measure (
     val strMeasure7: String,
     val strMeasure8: String,
     val strMeasure9: String,
-    val strMeasure10: String,
-    val strMeasure11: String,
-    val strMeasure12: String,
-    val strMeasure13: String,
-    val strMeasure14: String,
-    val strMeasure15: String,
-    val strMeasure16: String,
-    val strMeasure17: String,
-    val strMeasure18: String,
-    val strMeasure19: String,
-    val strMeasure20: String,
 ): Parcelable
