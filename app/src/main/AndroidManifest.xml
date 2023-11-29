@@ -17,10 +17,10 @@
         android:largeHeap="true"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".DetailActivity"
+            android:name=".ui.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:theme="@style/Base.Theme.SplashScreen.">
             <intent-filter>
