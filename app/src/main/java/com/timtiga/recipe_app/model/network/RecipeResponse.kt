@@ -2,15 +2,20 @@ package com.timtiga.recipe_app.model.network
 
 import android.os.Parcelable
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
+@JsonClass(generateAdapter = true)
 data class RecipeResponse(
     @Json(name = "data")
-    val meals: Meals,
+    val meals: List<Meals>? = null,
 
     @Json(name = "status")
     val status: Boolean? = null
 )
 
+@JsonClass(generateAdapter = true)
+@Parcelize
 data class Meals(
     val strMeal: String,
     val strCategory: String,
@@ -20,8 +25,10 @@ data class Meals(
     val strYoutube: String,
     val strIngredient: Ingredient,
     val strMeasure: Measure,
-)
+): Parcelable
 
+@JsonClass(generateAdapter = true)
+@Parcelize
 data class Ingredient (
     val strIngredient1: String,
     val strIngredient2: String,
@@ -33,8 +40,10 @@ data class Ingredient (
     val strIngredient8: String,
     val strIngredient9: String,
     val strIngredient10: String,
-)
+): Parcelable
 
+@JsonClass(generateAdapter = true)
+@Parcelize
 data class Measure (
     val strMeasure1: String,
     val strMeasure2: String,
@@ -56,4 +65,4 @@ data class Measure (
     val strMeasure18: String,
     val strMeasure19: String,
     val strMeasure20: String,
-)
+): Parcelable
