@@ -22,7 +22,7 @@
         android:elevation="5dp">
 
         <TextView
-            android:id="@+id/tv_title_recipe"
+            android:id="@+id/tv_recipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/linearDesc"

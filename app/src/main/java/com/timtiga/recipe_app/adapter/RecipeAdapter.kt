@@ -30,7 +30,7 @@ class RecipeAdapter: RecyclerView.Adapter<RecipeAdapter.MyViewHolder>() {
         val data = listRecipe[position]
 
         holder.binding.apply {
-            tvTitleRecipe.text = data.strMeal
+            tvRecipe.text = data.strMeal
             tvCategory.text = data.strCategory
             Picasso
                 .get()
