@@ -1,4 +1,4 @@
-package com.timtiga.recipe_app
+package com.timtiga.recipe_app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
