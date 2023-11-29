@@ -16,7 +16,7 @@
             android:layout_height="250dp">
 
             <ImageView
-                android:id="@+id/imageThumbnail"
+                android:id="@+id/iv_food"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
@@ -68,7 +68,7 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tv_desc"
+                    android:id="@+id/tv_title_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -77,8 +77,8 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_desc"
+                <TextView
+                    android:id="@+id/tv_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />
@@ -92,8 +92,8 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_ingredients"
+                <TextView
+                    android:id="@+id/tv_ingredients"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />
@@ -107,8 +107,8 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_steps"
+                <TextView
+                    android:id="@+id/tv_steps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />
