@@ -6,6 +6,5 @@
     <color name="dark_green">#256325</color>
     <color name="light_green">#92BB94</color>
     <color name="gray">#D9D9D9</color>
-
-
+    <color name="bg_profile">#f5f5f5</color>
 </resources>
