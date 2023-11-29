@@ -8,6 +8,5 @@
     <style name="Theme.Recipe_app" parent="Base.Theme.Recipe_app">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-
     </style>
 </resources>
