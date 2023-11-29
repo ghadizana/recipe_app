@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         _binding =  ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rvRecipes
+        binding.rvRecipes.apply {
+            layoutManager = GridLayoutManager(this@MainActivity,2)
+        }
     }
 
 }
