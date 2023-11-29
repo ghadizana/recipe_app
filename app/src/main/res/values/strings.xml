@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">recipe_app</string>
+        <string name="app_name">Dazlicious</string>
     <string name="deskripsi_makanan">Deskripsi Makanan</string>
     <string name="bahan_bahan">Bahan-bahan</string>
     <string name="langkah_langkah">Langkah-langkah</string>

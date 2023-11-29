@@ -7,17 +7,20 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.Url
 
 object ApiClient {
-    private inline fun <reified T> createService(baseUrl: String) : T {
-        val loggingInterceptor =
-            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-        val client = OkHttpClient.Builder()
-            .addInterceptor(loggingInterceptor)
+    fun provideApiService() : RecipeApiService {
+        val okHttpClient = OkHttpClient.Builder()
+            .addInterceptor {
+                val newRequest = it.request().newBuilder()
+                    .build()
+                it.proceed(newRequest)
+            }
             .build()
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://masak-apa.tomorisakura.vercel.app")
+
+        return Retrofit.Builder()
+            .baseUrl("www.themealdb.com/")
+            .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create())
-            .client(client)
             .build()
-        return retrofit.create(T::class.java)
+            .create(RecipeApiService::class.java)
     }
 }
