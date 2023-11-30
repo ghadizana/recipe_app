@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 
 @JsonClass(generateAdapter = true)
 data class RecipeResponse(
-    @Json(name = "data")
+    @Json(name = "meals")
     val Meals: List<meals>,
 
     @Json(name = "status")
