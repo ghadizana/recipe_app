@@ -7,10 +7,9 @@ import retrofit2.http.Query
 
 interface RecipeApiService {
     // list recipe
-    @GET("/api/json/v1/1/search.php?f=a")
+    @GET("/api/json/v1/1/search.php")
     fun getListRecipes(
-        @Query("q") q: String = "a",
-        @Query("pageSize") pageSize: Int = 50
+        @Query("f") q: String = "a"
     ): Call<RecipeResponse>
 
     // detail meal

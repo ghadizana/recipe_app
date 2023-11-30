@@ -36,7 +36,7 @@ class RecipeViewModel: ViewModel() {
                 override fun onFailure(call: Call<RecipeResponse>, t: Throwable) {
                     Log.e(
                         "ViewModel",
-                        "onFailure" + t.localizedMessage
+                        "onFailure " + t.localizedMessage
                     )
                 }
             })
