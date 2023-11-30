@@ -3,4 +3,7 @@
     <string name="deskripsi_makanan">Deskripsi Makanan</string>
     <string name="bahan_bahan">Bahan-bahan</string>
     <string name="langkah_langkah">Langkah-langkah</string>
+    <string name="txt_welcome">Selamat Datang!</string>
+    <string name="txt_find_recipe">Mau cari resep apa?</string>
+    <string name="txt_resep_populer">Resep Populer</string>
 </resources>
