@@ -8,24 +8,35 @@ import kotlinx.parcelize.Parcelize
 @JsonClass(generateAdapter = true)
 data class RecipeResponse(
     @Json(name = "data")
-    val meals: List<Meals>? = null,
+    val Meals: List<meals>,
 
     @Json(name = "status")
-    val status: Boolean? = null
-)
-
-@JsonClass(generateAdapter = true)
-@Parcelize
-data class Meals(
-    val strMeal: String,
-    val strCategory: String,
-    val strArea: String,
-    val strInstructions: String,
-    val strMealThumb: String,
-    val strYoutube: String,
-    val strIngredient: Ingredient,
-    val strMeasure: Measure,
-): Parcelable
+    val status: Boolean
+) {
+    @JsonClass(generateAdapter = true)
+    data class meals (
+        val strMeal: String,
+        val strCategory: String,
+        val strArea: String,
+        val strInstructions: String,
+        val strMealThumb: String,
+        val strYoutube: String,
+        val strIngredient: Ingredient,
+        val strMeasure: Measure,
+    )
+}
+//    @JsonClass(generateAdapter = true)
+//    @Parcelize
+//    data class Meals (
+//        val strMeal: String,
+//        val strCategory: String,
+//        val strArea: String,
+//        val strInstructions: String,
+//        val strMealThumb: String,
+//        val strYoutube: String,
+//        val strIngredient: Ingredient,
+//        val strMeasure: Measure,
+//    ): Parcelable
 
 @JsonClass(generateAdapter = true)
 @Parcelize

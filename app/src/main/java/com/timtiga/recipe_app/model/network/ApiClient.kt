@@ -17,7 +17,7 @@ object ApiClient {
             .build()
 
         return Retrofit.Builder()
-            .baseUrl("www.themealdb.com/")
+            .baseUrl("https://www.themealdb.com/")
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
