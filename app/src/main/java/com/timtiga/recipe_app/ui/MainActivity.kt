@@ -1,15 +1,13 @@
 package com.timtiga.recipe_app.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.timtiga.recipe_app.RecipeViewModel
 import com.timtiga.recipe_app.adapter.RecipeAdapter
 import com.timtiga.recipe_app.databinding.ActivityMainBinding
-import com.timtiga.recipe_app.model.network.RecipeResponse
-import com.timtiga.recipe_app.model.network.RecipeResponse.meals
 
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
@@ -31,13 +29,11 @@ class MainActivity : AppCompatActivity() {
             val mAdapter = RecipeAdapter()
             binding.rvRecipes.apply {
                 adapter = mAdapter
+            }
         }
-    }
     }
 
     private fun showRecyclerList() {
         binding.rvRecipes.layoutManager = GridLayoutManager(this, 2)
     }
-
-
 }
