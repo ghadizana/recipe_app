@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@+id/recipe_nav">
+    app:startDestination="@+id/nav_home">
 
-    <fragment
+    <activity
         android:id="@+id/nav_home"
-        android:label="item_recipe"
-        android:name=""
-        tools:layout="@layout/item_recipe"/>
+        android:label="MainActivity"
+        android:name="com.timtiga.recipe_app.ui.MainActivity"
+        tools:layout="@layout/activity_main"/>
     <fragment
         android:id="@+id/nav_profile"
-        android:name=""
         android:label="AboutActivity"
         tools:layout="@layout/activity_about"/>
 
