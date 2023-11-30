@@ -21,6 +21,7 @@
         
         <TextView
             android:id="@+id/tv_recipe"
+            android:text="Lorem Ipsum Dolor Sit Amet Lorem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -30,6 +31,7 @@
 
         <TextView
             android:id="@+id/tv_category"
+            android:text="Lorem Ipsum Dolor Sit Amet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"

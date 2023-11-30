@@ -1,18 +1,16 @@
 package com.timtiga.recipe_app.ui
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
+import com.timtiga.recipe_app.RecipeViewModel
 import com.timtiga.recipe_app.adapter.RecipeAdapter
 import com.timtiga.recipe_app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding as ActivityMainBinding
 
@@ -27,15 +25,14 @@ class MainActivity : AppCompatActivity() {
 
         _recipeViewModel = ViewModelProvider(this)[RecipeViewModel::class.java]
         recipeViewModel.listRecipes()
-        recipeViewModel.listRecipes.observe(viewLifecycleOwner){
+        recipeViewModel.listRecipes.observe(this){
             val mAdapter = RecipeAdapter()
             mAdapter.setData(it.meals)
             binding.rvRecipes.apply {
                 adapter = mAdapter
                 layoutManager = GridLayoutManager(this@MainActivity,2)
+            }
         }
     }
-    }
-
-
 }
+
