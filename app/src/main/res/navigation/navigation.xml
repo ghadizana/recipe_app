@@ -12,6 +12,7 @@
         tools:layout="@layout/activity_main"/>
     <activity
         android:id="@+id/nav_profile"
-        android:label="AboutActivity"/>
+        android:label="AboutActivity"
+        />
 
 </navigation>
