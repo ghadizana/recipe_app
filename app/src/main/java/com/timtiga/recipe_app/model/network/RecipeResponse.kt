@@ -7,25 +7,36 @@ import kotlinx.parcelize.Parcelize
 
 @JsonClass(generateAdapter = true)
 data class RecipeResponse(
-    @Json(name = "data")
-    val meals: List<Meals>? = null,
+    @Json(name = "meals")
+    val Meals: List<meals>,
 
     @Json(name = "status")
-    val status: Boolean? = null
-)
-
-@JsonClass(generateAdapter = true)
-@Parcelize
-data class Meals(
-    val strMeal: String,
-    val strCategory: String,
-    val strArea: String,
-    val strInstructions: String,
-    val strMealThumb: String,
-    val strYoutube: String,
-    val strIngredient: Ingredient,
-    val strMeasure: Measure,
-): Parcelable
+    val status: Boolean
+) {
+    @JsonClass(generateAdapter = true)
+    data class meals (
+        val strMeal: String,
+        val strCategory: String,
+        val strArea: String,
+        val strInstructions: String,
+        val strMealThumb: String,
+        val strYoutube: String,
+        val strIngredient: Ingredient,
+        val strMeasure: Measure,
+    )
+}
+//    @JsonClass(generateAdapter = true)
+//    @Parcelize
+//    data class Meals (
+//        val strMeal: String,
+//        val strCategory: String,
+//        val strArea: String,
+//        val strInstructions: String,
+//        val strMealThumb: String,
+//        val strYoutube: String,
+//        val strIngredient: Ingredient,
+//        val strMeasure: Measure,
+//    ): Parcelable
 
 @JsonClass(generateAdapter = true)
 @Parcelize
@@ -39,7 +50,6 @@ data class Ingredient (
     val strIngredient7: String,
     val strIngredient8: String,
     val strIngredient9: String,
-    val strIngredient10: String,
 ): Parcelable
 
 @JsonClass(generateAdapter = true)
@@ -54,15 +64,4 @@ data class Measure (
     val strMeasure7: String,
     val strMeasure8: String,
     val strMeasure9: String,
-    val strMeasure10: String,
-    val strMeasure11: String,
-    val strMeasure12: String,
-    val strMeasure13: String,
-    val strMeasure14: String,
-    val strMeasure15: String,
-    val strMeasure16: String,
-    val strMeasure17: String,
-    val strMeasure18: String,
-    val strMeasure19: String,
-    val strMeasure20: String,
 ): Parcelable

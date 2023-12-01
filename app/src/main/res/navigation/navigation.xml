@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@+id/nav_home">
+
+    <activity
+        android:id="@+id/nav_home"
+        android:label="MainActivity"
+        android:name="com.timtiga.recipe_app.ui.MainActivity"
+        tools:layout="@layout/activity_main"/>
+    <activity
+        android:id="@+id/nav_profile"
+        android:label="AboutActivity"/>
+
+</navigation>

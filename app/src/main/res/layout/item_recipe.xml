@@ -13,15 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/heart_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:layout_margin="10dp"
+            android:layout_gravity="end"/>
+
         <ImageView
             android:id="@+id/iv_recipe"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="fitXY" />
         
         <TextView
             android:id="@+id/tv_recipe"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:paddingStart="20dp"
@@ -30,14 +42,13 @@
 
         <TextView
             android:id="@+id/tv_category"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:paddingStart="20dp"
             android:paddingBottom="10dp"
             android:textSize="16sp"
             android:textStyle="bold" />
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

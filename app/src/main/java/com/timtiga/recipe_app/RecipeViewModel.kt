@@ -12,7 +12,7 @@ import retrofit2.Response
 
 class RecipeViewModel: ViewModel() {
     private var _listRecipes = MutableLiveData<RecipeResponse>()
-    private val listRecipes get() = _listRecipes as LiveData<RecipeResponse>
+    val listRecipes get() = _listRecipes as LiveData<RecipeResponse>
 
     fun listRecipes() {
         ApiClient.provideApiService().getListRecipes()
@@ -36,7 +36,7 @@ class RecipeViewModel: ViewModel() {
                 override fun onFailure(call: Call<RecipeResponse>, t: Throwable) {
                     Log.e(
                         "ViewModel",
-                        "onFailure" + t.localizedMessage
+                        "onFailure " + t.localizedMessage
                     )
                 }
             })
