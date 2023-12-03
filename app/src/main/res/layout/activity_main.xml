@@ -15,6 +15,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_welcome"
+                android:layout_marginTop="30dp"
                 android:textSize="26sp"
                 android:layout_marginStart="16dp"
                 android:textStyle="bold"/>
