@@ -1,12 +1,9 @@
 package com.timtiga.recipe_app.ui
 
-import android.os.Build
 import android.os.Build.VERSION.SDK_INT
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.widget.TextView
-import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
 import com.timtiga.recipe_app.databinding.ActivityDetailBinding
 import com.timtiga.recipe_app.model.network.MealsItem
@@ -18,7 +15,6 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         _binding = ActivityDetailBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         @Suppress("DEPRECATION") var recipeData = when{
