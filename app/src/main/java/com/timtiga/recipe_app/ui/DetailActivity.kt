@@ -26,8 +26,6 @@ class DetailActivity : AppCompatActivity() {
             else -> intent.getParcelableExtra(RECIPE_DATA)
         }
 
-
-
         binding.apply {
             tvTitleRecipe.text = recipeData?.strMeal
             tvTitleCategory.text = recipeData?.strCategory
