@@ -1,5 +1,5 @@
 <resources>
-        <string name="app_name">Dazlicious</string>
+    <string name="app_name">Dazlicious</string>
     <string name="deskripsi_makanan">Deskripsi Makanan</string>
     <string name="bahan_bahan">Bahan-bahan</string>
     <string name="langkah_langkah">Langkah-langkah</string>
@@ -8,4 +8,6 @@
     <string name="txt_resep_populer">Resep Populer</string>
     <string name="Home">Home</string>
     <string name="Profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

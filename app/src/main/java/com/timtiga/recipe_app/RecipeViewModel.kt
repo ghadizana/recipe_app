@@ -29,7 +29,7 @@ class RecipeViewModel: ViewModel() {
                         _listRecipes.postValue(response.body())
                     } else Log.e(
                         "ViewModel",
-                        "onFailure"
+                        "onFailure: Call error with HTTP status code" + response.code()
                     )
                 }
 

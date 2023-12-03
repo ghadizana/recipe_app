@@ -9,7 +9,7 @@ interface RecipeApiService {
     // list recipe
     @GET("/api/json/v1/1/search.php")
     fun getListRecipes(
-        @Query("f") q: String = "a"
+        @Query("f") q: String = "c"
     ): Call<RecipeResponse>
 
     // detail meal
