@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.timtiga.recipe_app.R
 import com.timtiga.recipe_app.databinding.ActivityMainBinding
 import com.timtiga.recipe_app.fragment.RecipeFragment
