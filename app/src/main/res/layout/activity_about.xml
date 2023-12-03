@@ -53,7 +53,7 @@
             android:id="@+id/tv_team"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="68dp"
             android:text="@string/team"
             android:textColor="@color/dark_green"
             android:textSize="20sp"
@@ -65,9 +65,9 @@
 
         <TextView
             android:id="@+id/tv_n"
-            android:layout_width="162dp"
-            android:layout_height="33dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
             android:text="@string/nabilla_ramadani"
             android:textColor="@color/dark_green"
             android:textSize="20sp"
@@ -121,20 +121,21 @@
 
         <View
             android:id="@+id/view_line"
-            android:layout_width="match_parent"
+            android:layout_width="238dp"
             android:layout_height="3dp"
             android:layout_margin="20dp"
             android:background="@color/light_green"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.475" />
 
         <TextView
             android:id="@+id/tv_about"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:text="@string/about_app"
             android:textColor="@color/dark_green"
             android:textSize="20sp"
@@ -147,7 +148,7 @@
             android:id="@+id/tv_desc"
             android:layout_width="239dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/dazlicious_is_a_recipe_app_that_can_help_you_to_make_delicious_dish_everyday"
             android:textColor="@color/dark_green"
             android:textSize="20sp"
