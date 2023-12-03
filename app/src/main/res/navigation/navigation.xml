@@ -13,6 +13,7 @@
     <activity
         android:id="@+id/nav_profile"
         android:label="AboutActivity"
-        />
+        android:name="com.timtiga.recipe_app.AboutActivity"
+        tools:layout="@layout/activity_about"/>
 
 </navigation>
