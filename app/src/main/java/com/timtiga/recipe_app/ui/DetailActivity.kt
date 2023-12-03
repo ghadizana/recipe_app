@@ -26,8 +26,15 @@ class DetailActivity : AppCompatActivity() {
             else -> intent.getParcelableExtra(RECIPE_DATA)
         }
 
+
+
         binding.apply {
             tvTitleRecipe.text = recipeData?.strMeal
+            tvTitleCategory.text = recipeData?.strCategory
+            tvTitleArea.text = recipeData?.strArea
+            tvTitleIngredients.text = recipeData?.strIngredient1
+            tvTitleSteps.text = recipeData?.strInstructions
+            Picasso.get().load(recipeData?.strMealThumb).into(ivFood)
         }
     }
 

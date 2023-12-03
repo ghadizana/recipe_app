@@ -8,6 +8,13 @@
     <string name="txt_resep_populer">Resep Populer</string>
     <string name="Home">Home</string>
     <string name="Profile">Profile</string>
-    <string name="Search">Search</string>
-    <string name="favorite">Favorite</string>
+    <string name="profile">profile</string>
+    <string name="finpro_jaya">FINPRO JAYA</string>
+    <string name="team">TEAM :</string>
+    <string name="nabilla_ramadani">Nabilla Ramadani</string>
+    <string name="fildza_nazhifa">Fildza Nazhifa</string>
+    <string name="ghadiza_naura_aliya">Ghadiza Naura Aliya</string>
+    <string name="beby_azzura">Beby Azzura</string>
+    <string name="about_app">ABOUT APP</string>
+    <string name="dazlicious_is_a_recipe_app_that_can_help_you_to_make_delicious_dish_everyday">Dazlicious is a recipe app that can help you to make delicious dish everyday!</string>
 </resources>
