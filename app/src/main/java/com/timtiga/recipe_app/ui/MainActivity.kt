@@ -1,7 +1,6 @@
 package com.timtiga.recipe_app.ui
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.Fragment
@@ -34,21 +33,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             true
-        }
-
-        val fragmentManager = supportFragmentManager
-        val recipeFragment = RecipeFragment()
-        val fragment = fragmentManager.findFragmentByTag(RecipeFragment::class.java.simpleName)
-
-        if (fragment !is RecipeFragment) {
-            Log.d(
-                "MyFragment",
-                "Fragment Name : " + RecipeFragment::class.java.simpleName
-            )
-            fragmentManager
-                .beginTransaction()
-                .add(R.id.frame_container, recipeFragment, RecipeFragment::class.java.simpleName)
-                .commit()
         }
     }
 
